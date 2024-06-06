@@ -1,0 +1,72 @@
+/*
+#ec6e4c - rgb(236, 110, 76)
+#48484A - rgb(72, 72, 74)
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: url(./img/clouds-and-sunset-sea-of-clouds.jpg)
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    min-width: 500px;
+    min-height: 500px;
+    border: 2px solid rgba(119, 119, 119, 0.747);
+    border-radius: 10px;
+}
+
+.search{
+    margin: 30px 0 50px;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+}
+
+.container-local{ 
+    display: flex;
+    justify-content: center;
+}
+
+.local-icon{
+    color: #ec6e4c ;
+    margin: 3px 10px;
+}
+
+#content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    align-items: center;
+}
+
+#content > * {
+    margin: 5px 10px;
+    text-transform: capitalize;
+}
+
+#content h3:nth-child(n+3):nth-child(-n+8){
+    margin-bottom: 30px;
+}
+
+.wather-icon{
+    height: 80px;
+    filter: drop-shadow(1px 1px 1px #000000);
+    animation: 1s alternate ease-out;
+}
